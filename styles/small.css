@@ -1,7 +1,9 @@
 :root {
   --primary: #405235;
 }
-
+header {
+  border: 1px solid black;
+}
 nav {
   width: 100%;
   background-color: #eae9e4;
@@ -45,7 +47,22 @@ header h1 {
   margin: 0;
   font-family: "Work Sans";
 }
-footer div {
+main {
+  border: 1px solid black;
+}
+footer .footerLogo {
   width: 100px;
   height: 100px;
+}
+footer {
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.fa-brands {
+  color: blue;
+}
+.fa-brands.fa-youtube {
+  color: red;
 }
