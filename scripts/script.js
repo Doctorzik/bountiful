@@ -14,3 +14,5 @@ async function apiFetch() {
   }
 }
 apiFetch();
+
+document.getElementById("currentDate").textContent = document.lastModified;

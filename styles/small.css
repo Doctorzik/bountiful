@@ -66,3 +66,7 @@ footer {
 .fa-brands.fa-youtube {
   color: red;
 }
+.management .imagediv {
+  width: 100px;
+  height: 100px;
+}
