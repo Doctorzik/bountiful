@@ -41,7 +41,27 @@
         </ul>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <h2>Make Your Own Special Drink</h2>
+      <form>
+        <label for="fname"
+          >First Name:<input type="text" required id="fname"
+        /></label>
+
+        <label for="email"
+          >Email:
+          <input type="email" id="email" required placeholder="james@gmail.com"
+        /></label>
+        <label for="phone"
+          >Phone Number: <input type="tel" required id="phone"
+        /></label>
+        <select id="fruit1"></select>
+        <select id="fruit2"></select>
+        <select id="fruit3"></select>
+
+        <input type="submit" value="Make Your Drink" />
+      </form>
+    </main>
     <footer>
       <div class="footerLogo">
         <img src="images/images.jpeg" alt="Bountiful Logo" />
@@ -66,6 +86,7 @@
       </div>
       <p>Last modified: <span id="currentDate"></span></p>
     </footer>
+    <script src="scripts/fruit.js"></script>
     <script src="scripts/script.js"></script>
   </body>
 </html>
