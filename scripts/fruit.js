@@ -1,5 +1,5 @@
 const numOrderDrinks = document.getElementById("numOrdered");
-const num = Number(localStorage.getItem("ordering"));
+let num = Number(localStorage.getItem("ordering"));
 console.log(num);
 
 if (numOrderd !== 0) {
