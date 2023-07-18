@@ -2,7 +2,7 @@ const numOrderDrinks = document.getElementById("numOrdered");
 let num = Number(localStorage.getItem("ordering"));
 console.log(num);
 
-if (numOrderd !== 0) {
+if (num !== 0) {
   numOrderDrinks.textContent = num;
 } else {
   numOrderDrinks.textContent = "You have not yet order any drink";
