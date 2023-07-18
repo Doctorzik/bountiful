@@ -43,9 +43,9 @@
     </header>
     <main>
       <h2>Make Your Own Special Drink</h2>
-      <form>
+      <form id="special-drink">
         <label for="fname"
-          >First Name:<input type="text" required id="fname"
+          >First Name:<input type="text" name="fname" required id="fname"
         /></label>
 
         <label for="email"
@@ -55,12 +55,25 @@
         <label for="phone"
           >Phone Number: <input type="tel" required id="phone"
         /></label>
-        <select id="fruit1"></select>
-        <select id="fruit2"></select>
-        <select id="fruit3"></select>
+        <label for="fruit1">
+          First fruit:
+          <select id="fruit1" required></select>
+        </label>
+        <label for="fruit2">
+          Second fruit:
+          <select id="fruit2" required></select>
+        </label>
+        <label for="fruit3">
+          Third fruit:
+          <select id="fruit3" required></select>
+        </label>
+
+        <label for="instructions">Special Instructions:</label>
+        <textarea id="instructions" rows="5"></textarea>
 
         <input type="submit" value="Make Your Drink" />
       </form>
+      <div id="outputArea"></div>
     </main>
     <footer>
       <div class="footerLogo">
