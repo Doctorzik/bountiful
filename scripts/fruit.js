@@ -1,18 +1,3 @@
-const numOrderDrinks = document.getElementById("numOrdered");
-let num = Number(localStorage.getItem("ordering"));
-console.log(num);
-
-if (num !== 0) {
-  numOrderDrinks.textContent = num;
-} else {
-  numOrderDrinks.textContent = "You have not yet order any drink";
-}
-console.log(num);
-numOrderd++;
-console.log(num);
-
-window.localStorage.setItem("ordering", "num");
-
 url = "https://brotherblazzard.github.io/canvas-content/fruit.json";
 
 async function apiFetch() {
@@ -77,6 +62,7 @@ async function apiFetch() {
 
           // Display the output
           document.getElementById("outputArea").innerHTML = output;
+          document.getElementById("special-drink").reset();
         });
     } else {
       throw Error(await response.text());

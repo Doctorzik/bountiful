@@ -3,10 +3,26 @@
 }
 header {
   border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 nav {
   width: 100%;
   background-color: #eae9e4;
+  display: none;
+}
+.harmburger {
+  height: 40px;
+  width: 40px;
+  margin: 0;
+}
+.harmburger div {
+  width: 30px;
+  height: 3px;
+  border: 1px solid black;
+  margin: 5px;
+  color: #267b51;
 }
 
 nav ul {
@@ -14,6 +30,9 @@ nav ul {
   padding: 0;
   list-style-type: none;
   margin-left: 0px;
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
 }
 nav ul li {
   text-align: center;
@@ -36,11 +55,10 @@ img {
   height: inherit;
   object-fit: cover;
 }
-header div {
-  margin: 0 auto;
-
-  width: 120px;
-  height: 120px;
+header div.logo {
+  width: 50px;
+  height: 50px;
+  margin: 0;
 }
 body {
   max-width: 1000px;
@@ -51,6 +69,7 @@ header h1 {
   text-align: center;
   margin: 0;
   font-family: "Work Sans";
+  display: none;
 }
 main {
   border: 1px solid black;
