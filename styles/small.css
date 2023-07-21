@@ -7,61 +7,92 @@
   box-sizing: border-box;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
 body {
-  max-width: 1200px;
-  margin: 0 auto;
+  background-color: #fefefe;
+}
+header {
+  width: 100%;
+  height: 100px;
+  background: #11101b;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 100px;
+}
+
+.hamburger {
+  display: none;
+}
+.nav-bar ul {
+  display: flex;
+}
+.nav-bar ul li a {
+  display: block;
+  color: #fefefe;
+  font-size: 20px;
+  padding: 10px 25px;
+  border-radius: 50px;
+  transition: 0.2s;
+  margin: 0 5px;
+}
+.nav-bar ul li a:hover {
+  color: #11101b;
+  background: #fefefe;
+}
+.nav-bar ul li a.active {
+  color: #11101b;
+  background: #fefefe;
+}
+
+.hamburger {
+  display: block;
+  cursor: pointer;
+}
+.hamburger .line {
+  width: 30px;
+  height: 3px;
+  background: #fefefe;
+  margin: 6px;
+}
+.nav-bar {
+  height: 0;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  right: 0;
+  background: #11101b;
+  transition: 0.2s;
+  width: 100vw;
+  overflow: hidden;
+}
+.nav-bar.active {
+  height: 250px;
+}
+.nav-bar.active ul {
+  opacity: 1;
+}
+.nav-bar ul {
+  display: block;
+  width: fit-content;
+  margin: 80px auto 80px auto;
+  text-align: center;
+  transition: 0.5s;
+  opacity: 0;
+}
+.nav-bar ul li a {
+  margin-bottom: 12px;
 }
 
 .logo-div {
   width: 80px;
-}
-header {
-  display: flex;
   height: 80px;
-
-  padding: 0px 30px;
-  align-items: center;
-  justify-content: space-between;
-}
-div.harmburger {
-  width: 40px;
-  height: 33px;
-  text-align: center;
-}
-.harmburger .line {
-  width: 30px;
-  height: 3px;
-  margin: 6px;
-  background: violet;
-}
-
-header nav {
-  position: absolute;
-  top: 80px;
-  right: 10px;
-  border: 1px solid black;
-  margin: 0;
-  padding: 2px;
-  background: #111b11;
-  height: 450px;
-  width: 100vw;
-  opacity: 0;
-  overflow: hidden;
-}
-
-header nav ul li a {
-  display: block;
-  text-decoration: none;
-  color: white;
-  text-align: center;
-  margin: 80px auto 80px auto;
-  border-radius: 50px;
-  width: fit-content;
-  background: red;
-}
-header nav ul li a:hover {
-  background: #405235;
-  transition: 0.5s;
 }
 
 img {
@@ -90,4 +121,34 @@ footer {
 .management .imagediv {
   width: 100px;
   height: 100px;
+}
+form {
+  max-width: 900px;
+  border: 1px solid black;
+  margin: 0 auto;
+  display: block;
+}
+.top {
+  display: block;
+  margin: 10px;
+  padding-right: 10px;
+}
+#submit {
+  border-radius: 50px;
+  padding: 10px;
+  margin: auto;
+  display: block;
+}
+#submit:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+#outputArea {
+  max-width: 900px;
+  text-align: center;
+  margin: 10px auto;
+  background-color: #405235;
+  color: rgba(0, 0, 0, 10);
+}
+#outputArea h2 {
+  color: #405235;
 }

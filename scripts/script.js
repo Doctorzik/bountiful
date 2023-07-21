@@ -1,16 +1,8 @@
 document.getElementById("currentDate").textContent = document.lastModified;
 
-/* 
+hamburger = document.querySelector(".hamburger");
 
-
-
-function toggleMenu() {
-  document.getElementById("orderlist").classList.toggle("open");
-  document.getElementById("button").classList.toggle("open");
-}
-
-const x = document.getElementById("button");
-
-x.onclick = toggleMenu;
-
-*/
+hamburger.onclick = function () {
+  navBar = document.querySelector(".nav-bar");
+  navBar.classList.toggle("active");
+};

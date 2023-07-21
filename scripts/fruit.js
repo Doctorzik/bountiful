@@ -19,13 +19,6 @@ async function apiFetch() {
           const email = document.getElementById("email").value;
           const phone = document.getElementById("phone").value;
           const instructions = document.getElementById("instructions").value;
-          console.log(f1);
-          console.log(f2);
-          console.log(f3);
-          console.log(firstName);
-          console.log(email);
-          console.log(phone);
-          console.log(instructions);
 
           const selectedFruits = [f1, f2, f3];
           let totalCarbs = 0;

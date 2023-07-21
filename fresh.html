@@ -23,47 +23,49 @@
   </head>
   <body>
     <header>
-      <div>
-        <img src="images/images.jpeg" alt="Bountiful Logo" />
+      <div class="logo-div"><img src="images/fruitlogo.webp" /></div>
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
       </div>
-      <h1>Bountiful Foods</h1>
-      <nav>
+      <nav class="nav-bar">
         <ul>
           <li>
-            <a href="index.html"
-              ><i class="fa-solid fa-house" aria-hidden="true"></i>HOME</a
-            >
+            <a href="index.html" class="active">Home</a>
           </li>
           <li>
-            <a href="fresh.html"><i class="fa-solid fa-mug-saucer"></i>FRESH</a>
+            <a href="fresh.html">FRESH</a>
           </li>
-          <li><a href="about.html">ABOUT US</a></li>
+          <li>
+            <a href="about.html">ABOUT</a>
+          </li>
         </ul>
       </nav>
     </header>
     <main>
       <h2>Make Your Own Special Drink</h2>
       <form id="special-drink">
-        <label for="fname"
+        <label for="fname" class="top"
           >First Name:<input type="text" name="fname" required id="fname"
         /></label>
 
-        <label for="email"
+        <label for="email" class="top"
           >Email:
           <input type="email" id="email" required placeholder="james@gmail.com"
         /></label>
-        <label for="phone"
+        <label for="phone" class="top"
           >Phone Number: <input type="tel" required id="phone"
         /></label>
-        <label for="fruit1">
+        <label for="fruit1" class="top">
           First fruit:
           <select id="fruit1" required></select>
         </label>
-        <label for="fruit2">
+        <label for="fruit2" class="top">
           Second fruit:
           <select id="fruit2" required></select>
         </label>
-        <label for="fruit3">
+        <label for="fruit3" class="top">
           Third fruit:
           <select id="fruit3" required></select>
         </label>
@@ -71,9 +73,9 @@
         <label for="instructions">Special Instructions:</label>
         <textarea id="instructions" rows="5"></textarea>
 
-        <input type="submit" value="Make Your Drink" />
+        <input id="submit" type="submit" value="Make Your Drink" />
       </form>
-      <div id="outputArea"></div>
+      <div id="outputArea" class="output"></div>
     </main>
     <footer>
       <div class="footerLogo">
