@@ -1,5 +1,51 @@
-@media only screen and (min-width: 35rem) {
+@media only screen and (min-width: 30rem) {
   header {
     padding: 0 30px;
+  }
+  .nav-bar {
+    width: 900px;
+    margin: 0 auto;
+  }
+  header h1 {
+    display: contents;
+    color: #fefefe;
+    margin-left: 10px;
+  }
+  .management {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    background: var(--white-2);
+  }
+  .management h5,
+  p {
+    text-align: center;
+    margin: 10px;
+    font-size: 1.5rem;
+  }
+  .zik-div {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .faith-div {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .dinah-div {
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
+  .management-img {
+    border: 10px solid rgba(0, 0, 0, 0.3);
+    transition: 0.5s;
+    box-shadow: 5px 5px 10px;
+  }
+
+  .order-link,
+  .about-link,
+  .email-link {
+    max-width: 60%;
+    margin: auto;
   }
 }

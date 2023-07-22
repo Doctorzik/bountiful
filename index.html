@@ -22,31 +22,9 @@
     />
   </head>
   <body>
-    <!-- <header>
-      <div class="logo">
-        <div class="logo-div">
-          <img src="images/images.jpeg" alt="Bountiful Logo" />
-        </div>
-      </div>
-      <div class="harmburger">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-      </div>
-      <nav class="nav-bar">
-        <ul>
-          <li>
-            <a href="#" class="active">HOME </a>
-          </li>
-          <li>
-            <a href="#">FRESH</a>
-          </li>
-          <li><a href="#">ABOUT US</a></li>
-        </ul>
-      </nav>
-    </header> -->
     <header>
-      <div class="logo-div"><img src="images/fruitlogo.webp" /></div>
+      <div class="logo-div"><img src="images/images.jpeg" /></div>
+      <h1>Bountiful Foods</h1>
       <div class="hamburger">
         <div class="line"></div>
         <div class="line"></div>
@@ -67,7 +45,7 @@
       </nav>
     </header>
     <p><span>Number of Drinks Order: </span><span id="numOrdered"></span></p>
-    <main>
+    <main class="home-main">
       <div id="hero-div">
         <img src="images/fruit.jpg" alt="Fruit Image" />
         <i>A Home for fresh and Healthy Organic Farm Produce</i>
@@ -83,9 +61,9 @@
           fields, ensuring you experience the true taste of nature in every
           bite.
         </p>
-        <div><a href="about.html">Learn More</a></div>
+        <span class="about-link"><a href="about.html">Learn More</a></span>
       </section>
-      <section>
+      <section class="make-fruit-section">
         <h2><i>We make the best Fruit Drinks</i></h2>
         <p>
           Introducing our irresistible fruit drinks, a delightful fusion of
@@ -95,19 +73,21 @@
           drinks burst with the goodness of vitamins, minerals, and
           antioxidants, providing a refreshing boost of energy and nourishment.
         </p>
-        <img src="images/fruitdrink1.jfif" />
-        <div></div>
+
+        <div>
+          <img class="make-fruit" src="images/fruitdrink1.jfif" />
+        </div>
         <h4>
           Make your own fruit drink
-          <span> <a href="fresh.html">Order Here</a></span>
+          <span class="order-link"> <a href="fresh.html">Order Here</a></span>
         </h4>
       </section>
-      <section>
+      <section class="weather-section">
         <h2>Carlsbad Weather Info</h2>
         <p>Current Temperature: <span id="temperature"></span>&#8490;</p>
         <p>Humidity: <span id="humidity"></span>g/kg</p>
 
-        <img id="weather-icon" />
+        <div class="weather-icon"><img id="weather-icon" /></div>
 
         <p id="description"></p>
       </section>

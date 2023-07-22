@@ -1,5 +1,15 @@
 :root {
   --primary: #405235;
+  --olivine: #97bc66ff;
+  --chinese-violet: #9c6585ff;
+  --white: #fefcfbff;
+  --white-2: #ffffffff;
+  --forest-green: #57902eff;
+  --persimmon: #ea6624ff;
+  --dark-spring-green: #1c7533ff;
+  --baby-powder: #f6f6efff;
+  --pakistan-green: #174709ff;
+  --pakistan-green-2: #25470cff;
 }
 * {
   margin: 0;
@@ -16,15 +26,25 @@
 }
 body {
   background-color: #fefefe;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+  padding-top: 0.5rem;
 }
 header {
   width: 100%;
   height: 100px;
-  background: #11101b;
+  background: var(--olivine);
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 0 100px;
+  justify-content: space-around;
+  padding: 10 100px;
+}
+header div img {
+  width: 80px;
+}
+header h1 {
+  display: none;
 }
 
 .hamburger {
@@ -64,10 +84,10 @@ header {
 .nav-bar {
   height: 0;
   position: absolute;
-  top: 80px;
+  top: 90px;
   left: 0;
   right: 0;
-  background: #11101b;
+  background: var(--olivine);
   transition: 0.2s;
   width: 100vw;
   overflow: hidden;
@@ -104,11 +124,54 @@ img {
 main {
   border: 1px solid black;
 }
+.home-main {
+  display: grid;
+  border: 1px solid black;
+}
+.home-main section {
+  text-align: center;
+  margin: 10px;
+  background: var(--baby-powder);
+}
+section.make-fruit-section {
+}
+.weather-section {
+  text-align: center;
+}
+.make-fruit {
+  margin: 10px auto;
+
+  border: 10px solid rgba(0, 0, 0, 0.3);
+  transition: 0.5s;
+  box-shadow: 5px 5px 10px;
+}
+.order-link,
+.about-link,
+.email-link {
+  display: block;
+  margin: 10px;
+  border: 10px solid rgba(0, 0, 0, 0.1);
+  background: var(--olivine);
+  font-size: 2rem;
+  text-decoration: none;
+}
+.management {
+  display: none;
+}
+.weather-icon {
+  margin: 10px auto;
+  width: 100px;
+  height: 100px;
+  border: 10px solid rgba(0, 0, 0, 0.3);
+  transition: 0.5s;
+  box-shadow: 5px 5px 10px;
+}
 footer .footerLogo {
   width: 100px;
   height: 100px;
 }
 footer {
+  align-items: center;
   border: 1px solid black;
   display: flex;
   justify-content: space-around;
@@ -119,8 +182,8 @@ footer {
   color: red;
 }
 .management .imagediv {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
 }
 form {
   max-width: 900px;
