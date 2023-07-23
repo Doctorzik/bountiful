@@ -23,7 +23,9 @@
   </head>
   <body>
     <header>
-      <div class="logo-div"><img src="images/images.jpeg" /></div>
+      <div class="logo-div">
+        <img alt="Bountiful Logo" src="images/images.jpeg" />
+      </div>
       <h1>Bountiful Foods</h1>
       <div class="hamburger">
         <div class="line"></div>
@@ -47,7 +49,7 @@
     <p><span>Number of Drinks Order: </span><span id="numOrdered"></span></p>
     <main class="home-main">
       <div id="hero-div">
-        <img src="images/fruit.jpg" alt="Fruit Image" />
+        <img loading="lazy" src="images/fruit.jpg" alt="Fruit Image" />
         <i>A Home for fresh and Healthy Organic Farm Produce</i>
       </div>
 
@@ -75,7 +77,12 @@
         </p>
 
         <div>
-          <img class="make-fruit" src="images/fruitdrink1.jfif" />
+          <img
+            loading="lazy"
+            class="make-fruit"
+            alt="FruitImgae"
+            src="images/fruitdrink1.jfif"
+          />
         </div>
         <h4>
           Make your own fruit drink
@@ -87,7 +94,9 @@
         <p>Current Temperature: <span id="temperature"></span>&#8490;</p>
         <p>Humidity: <span id="humidity"></span>g/kg</p>
 
-        <div class="weather-icon"><img id="weather-icon" /></div>
+        <div class="weather-icon">
+          <img alt="weather-icon" id="weather-icon" />
+        </div>
 
         <p id="description"></p>
       </section>
